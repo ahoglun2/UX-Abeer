@@ -86,7 +86,14 @@ const routes = (
     </Route>
     <Route
       path="/create"
-      element={<ScaffolderPage />}
+      element={
+        <ScaffolderPage
+          headerOptions={{
+            title: 'Create',
+            subtitle: 'Create new systems, components and templates',
+          }}
+        />
+      }
     />
     <Route path="/api-docs" element={<ApiExplorerPage />} />
     <Route
